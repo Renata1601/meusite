@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="=pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renata Gadelha - Sobre mim</title>
+    <style>
+        body {
+            font font-family: Arial, sans-serif;
+            background-Color: #f4f6f8;
+            color: #333;
+            margin:0;
+            padding:0;
+        }
+
+        header {
+            background-color: #800020;
+            color: white;
+            padding: 30px 20px;
+            text-align:center;
+        }
+
+        section {
+            padding: 30px 20px;
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            object-fit: cover;
+            border: 5px solid #800020;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #800020;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #1e90ff
+        }
+
+        #mensagem {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Renata Gadelha</h1>
+    </header>
+    <section>
+        <img src="renata.jpg" alt="Foto de Renata" />
+
+        <h2>Sobre mim</h2>
+        <p>Olá! Meu nome é Renata, sou estudante de Design de produto no IFB e apaixonada por criatividade, tecnologia e inovação. Estou em busca de oportunidades que me permitam crescer profissionalmente e aplicar meus conhecimentos em projetos reais. Gosto de aprender coisas novas e sou apaixonada pelo Design</p>
+        
+        <button onclick="mostrarMensagem()">Clique para saber mais!</button>
+        <div id="mensagem"></div>
+    </section>
+
+    <script>
+        function mostrarMensagem() {
+            const msg = document.getElementById("mensagem");
+            msg.innerText = "Obrigada por visitar meu site! Em breve, mais novidades :)";
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
